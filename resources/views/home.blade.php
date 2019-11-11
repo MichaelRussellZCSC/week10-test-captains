@@ -1,5 +1,5 @@
 @extends('common.layout')
-
+<link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}" />
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

@@ -18,5 +18,12 @@ class CaptainController extends Controller
         $view = view('captain/show');
         $view->captain = $captain;
         return $view;
-    }
+
 }
+    public function index()
+    {
+        return view('captain/index');
+    }
+
+    }
+$captains = DB:table('captains')->orderBy('name')->get();

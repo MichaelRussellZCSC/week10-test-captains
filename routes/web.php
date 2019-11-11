@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('start');
 });
+
+
+Route::get('/api/captain/kirk', 'Api\CaptainController@show');
+
+
+Route::get('/api/captain', 'Api\CaptainController@index');
 
 Auth::routes();
